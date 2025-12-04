@@ -1,36 +1,189 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# dependencies
+# ==========================================
+# Dependencies
+# ==========================================
 node_modules/
-
-# Expo
-.expo/
-dist/
-web-build/
-expo-env.d.ts
-
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-
-# Metro
-.metro-health-check*
-
-# debug
+package-lock.json
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+.yarn
+dist/
+.pnp
+.pnp.js
 
-# macOS
+# ==========================================
+# Environment & Secrets - CRITICAL
+# ==========================================
+.env
+.env.local
+.env.*.local
+.env.production
+.env.production.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+
+# ==========================================
+# Expo & React Native
+# ==========================================
+.expo/
+.expo-shared/
+dist/
+web-build/
+expo-env.d.ts
+.eslintcache
+.eas/
+
+# ==========================================
+# IDE & Editor
+# ==========================================
+.idea/
+.vscode/
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+!.vscode/extensions.json
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
 .DS_Store
+Thumbs.db
+.history/
+
+# ==========================================
+# Android Build & Signing - CRITICAL
+# ==========================================
+android/.gradle/
+android/.idea/
+android/app/build/
+android/app/*.keystore
+android/app/*.jks
+android/local.properties
+android/app/google-services.json
+android/app/google-services*.json
+android/app/google-services*.backup
+android/build/
+android/captures/
+android/gradlew
+android/gradlew.bat
+*.apk
+*.aab
+*.orig.*
+android/*.properties
+
+# ==========================================
+# iOS Build & Signing - CRITICAL
+# ==========================================
+ios/build/
+ios/Pods/
+ios/*.p8
+ios/*.p12
+ios/*.mobileprovision
+ios/*.ipa
+ios/.xcode.env.local
+ios/Podfile.lock
+
+# ==========================================
+# Certificates & Keys - CRITICAL
+# ==========================================
+*.der
+*.pem
+*.crt
+*.key
+*.pfx
+*.cert
+upload_certificate.pem
+deployment_cert.der
+release.keystore
+lumina-release-key.keystore
+debug.keystore
+upload_cert.der
+*.jks
+*.p7b
+
+# ==========================================
+# Build & Cache
+# ==========================================
+build/
+dist/
+*.o
+*.obj
+*.so
+.metro-health-check*
+.cache/
+
+# ==========================================
+# Logs
+# ==========================================
+logs/
+*.log
+*.log.*
+lerna-debug.log*
+
+# ==========================================
+# Supabase - CRITICAL
+# ==========================================
+supabase/.env
+supabase/.env.local
+supabase/seed.sql
+.supabase/
+supabase/.branches/
+
+# ==========================================
+# Temporary & Backup Files
+# ==========================================
+*.tmp
+*.temp
+*.bak
+*.backup
+~*
+.#*
+*.orig
+*.rej
+
+# ==========================================
+# OS Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Google Services & Firebase
+# ==========================================
+google-services*.json
+!google-services.example.json
+google-services*.backup
+
+# ==========================================
+# System & Package Manager
+# ==========================================
+.npm
+.eslintignore~
+.prettierignore~
+.gitignore~
+.gitattributes~
+
+# ==========================================
+# Test Coverage
+# ==========================================
+coverage/
+.nyc_output/
+*.lcov
 *.pem
 
 # local env files
+.env
 .env*.local
 
 # typescript

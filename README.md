@@ -384,29 +384,49 @@ We'd love your contributions! Whether it's bug fixes, new features, or documenta
 ### How to Contribute
 
 1. **Fork the repository**
+   - Click the "Fork" button on GitHub
+   - This creates a copy under your account
+
+2. **Clone your fork**
    ```bash
    git clone https://github.com/YOUR_USERNAME/lumina-lite.git
+   cd lumina-lite
    ```
 
-2. **Create a feature branch**
+3. **Add upstream remote**
+   ```bash
+   git remote add upstream https://github.com/anggi1991/lumina-lite.git
+   ```
+
+4. **Create a feature branch**
    ```bash
    git checkout -b feature/amazing-feature
    ```
 
-3. **Commit your changes**
+5. **Make your changes**
+   - Write your code
+   - Follow the code style guidelines
+   - Test your changes locally
+
+6. **Commit your changes**
    ```bash
-   git commit -m 'Add some amazing feature'
+   git commit -m 'feat: add some amazing feature'
+   # Use conventional commits: feat:, fix:, docs:, style:, refactor:, test:, chore:
    ```
 
-4. **Push to your fork**
+7. **Push to your fork**
    ```bash
    git push origin feature/amazing-feature
    ```
 
-5. **Open a Pull Request**
+8. **Open a Pull Request**
+   - Go to the original repository
+   - Click "New Pull Request"
+   - Select your branch
    - Describe your changes clearly
    - Include screenshots if UI changes
-   - Reference any related issues
+   - Reference any related issues (#issue-number)
+   - Wait for review and feedback
 
 ### Contribution Guidelines
 

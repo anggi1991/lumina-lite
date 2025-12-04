@@ -141,33 +141,60 @@ lumina-lite/
 │   ├── components/              # Reusable UI components
 │   │   ├── icons/              # Custom SVG icons
 │   │   └── ui/                 # UI components (buttons, cards, etc.)
-│   ├── screens/                # Main app screens
+│   ├── screens/                # Main app screens (16 screens)
 │   │   ├── HomeScreen.tsx      # Main dashboard
 │   │   ├── JournalEntryScreen.tsx
 │   │   ├── JournalListScreen.tsx
 │   │   ├── AnalyticsScreen.tsx
-│   │   └── ...
+│   │   ├── AuthScreen.tsx
+│   │   ├── ChatScreen.tsx
+│   │   ├── InsightScreen.tsx
+│   │   ├── OnboardingScreen.tsx
+│   │   ├── PremiumScreen.tsx
+│   │   ├── ProfileScreen.tsx
+│   │   ├── HistoryScreen.tsx
+│   │   ├── JournalDetailScreen.tsx
+│   │   └── More...
 │   ├── navigation/             # Navigation configuration
-│   │   └── MainTabNavigator.tsx
-│   ├── constants/              # App constants
-│   │   ├── theme.ts           # Design tokens
-│   │   └── mood.ts            # Mood definitions
-│   ├── utils/                  # Helper functions
-│   │   ├── date.ts            # Date utilities
-│   │   ├── mood.ts            # Mood-related helpers
-│   │   └── storage.ts         # Local storage helpers
+│   │   └── MainTabNavigator.tsx # Tab-based navigation setup
+│   ├── services/               # Business logic & API services
+│   │   ├── ai.ts              # AI integration service
+│   │   ├── auth.ts            # Authentication service
+│   │   ├── chat.ts            # Chat/messaging service
+│   │   ├── journal.ts         # Journal operations
+│   │   ├── mood.ts            # Mood tracking service
+│   │   ├── notifications.ts   # Push notifications
+│   │   └── supabase.ts        # Database & real-time sync
+│   ├── constants/              # App constants & configuration
+│   │   └── theme.ts           # Material Design 3 tokens
+│   ├── context/                # React Context for state management
+│   │   ├── ThemeContext.tsx   # Light/dark mode theme
+│   │   └── PremiumContext.tsx # Premium features context
 │   ├── types/                  # TypeScript type definitions
-│   │   └── journal.ts
-│   ├── i18n/                   # Internationalization
+│   │   └── env.d.ts           # Environment types
+│   ├── i18n/                   # Internationalization (13 languages)
 │   │   ├── index.ts
-│   │   └── locales/           # Language files
+│   │   └── locales/           # Language translation files
+│   ├── utils/                  # Helper functions
 │   ├── App.tsx                 # Root component
 │   └── index.ts
-├── assets/                     # Images and icons
-├── app.json                    # Expo configuration
-├── tsconfig.json              # TypeScript configuration
-├── package.json
-└── README.md
+├── supabase/                    # Supabase backend configuration
+│   ├── schema.sql             # Database schema
+│   └── functions/             # Serverless functions
+│       ├── chat-assistant/    # AI chat function
+│       └── generate-insight/  # Mood insight generation
+├── android/                     # Android-specific files
+│   ├── app/                   # Main app module
+│   │   ├── src/               # Android source code
+│   │   ├── build.gradle       # Gradle configuration
+│   │   └── google-services.json
+│   └── build.gradle
+├── assets/                      # Images, icons, and media
+├── app.json                     # Expo configuration
+├── tsconfig.json               # TypeScript configuration
+├── package.json                # Dependencies & scripts
+├── eslint.config.js           # Code style rules
+└── README.md                   # Project documentation
 ```
 
 ---
@@ -461,10 +488,10 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 - 📦 **Dependencies**: ~50
 - 📝 **Total Lines of Code**: ~5000+
-- ✨ **Components**: 30+
-- 📱 **Screens**: 10+
-- 🎨 **Design Tokens**: 100+
-- 🌍 **Languages Supported**: English (Extensible)
+- ✨ **Screens**: 16 (Authentication, Journal, Analytics, Chat, Premium, etc.)
+- 🎨 **Services**: 7 (Auth, Supabase, AI, Chat, Journal, Mood, Notifications)
+- 🌍 **Languages Supported**: 13 (English, Indonesian, Spanish, French, German, Portuguese, Russian, Arabic, Hindi, Japanese, Korean, Chinese, and more)
+- 📂 **Project Modules**: 9 (components, screens, services, navigation, context, types, i18n, constants, utils)
 
 ---
 
@@ -509,7 +536,7 @@ npx expo start --clear
 
 **Anggi Andriyana**
 
-- 🌐 **Portfolio**: [https://anggiandriyana.com](https://anggiandriyana.com)
+- 🌐 **Portfolio**: [https://portfolio.razqashop.com/](https://portfolio.razqashop.com/)
 - 💼 **LinkedIn**: [Anggi Andriyana](https://linkedin.com/in/anggi-andriyana-073a11aa)
 - 🐙 **GitHub**: [@anggi1991](https://github.com/anggi1991)
 - 📧 **Email**: anggiandriyana@razqashop.com

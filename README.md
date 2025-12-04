@@ -509,7 +509,7 @@ npx expo start --clear
 
 **Anggi Andriyana**
 
-- 🌐 **Portfolio**: [https://anggiandriyana.com](https://anggiandriyana.com)
+- 🌐 **Portfolio**: [https://portfolio.razqashop.com/](https://portfolio.razqashop.com/)
 - 💼 **LinkedIn**: [Anggi Andriyana](https://linkedin.com/in/anggi-andriyana-073a11aa)
 - 🐙 **GitHub**: [@anggi1991](https://github.com/anggi1991)
 - 📧 **Email**: anggiandriyana@razqashop.com

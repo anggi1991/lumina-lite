@@ -389,8 +389,12 @@ We'd love your contributions! Whether it's bug fixes, new features, or documenta
 
 2. **Clone your fork**
    ```bash
+   # Replace YOUR_USERNAME with your GitHub username
    git clone https://github.com/YOUR_USERNAME/lumina-lite.git
    cd lumina-lite
+   
+   # Example:
+   # git clone https://github.com/john-doe/lumina-lite.git
    ```
 
 3. **Add upstream remote**
